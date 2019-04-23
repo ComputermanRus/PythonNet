@@ -5,10 +5,13 @@ host = "25.34.220.231"
 port = 59980
 s.bind((host, port))
 s.listen(2)
-conn, addr = s.accept()
-data = conn.recv(1024)
-if data:
-    print(addr, data)
-    conn.send(b"Read!")
-z = input()
-conn.close
+cs = []
+for i in range(2):
+    clnt, addr = s.accept()
+    clnt.setblocking(0)
+    cs.append(clnt)
+
+while True:
+    if len(cs) != 0
+        for c in cs:
+            c.send(b"СООБЩЕНИЕ!")
