@@ -12,6 +12,6 @@ for i in range(2):
     cs.append(clnt)
 
 while True:
-    if len(cs) != 0
+    if len(cs) != 0:
         for c in cs:
             c.send(b"СООБЩЕНИЕ!")
