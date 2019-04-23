@@ -15,3 +15,4 @@ while True:
     if len(cs) != 0:
         for c in cs:
             c.send(b"MESSAGE!")
+            print(b"Sended")
