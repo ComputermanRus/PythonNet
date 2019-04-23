@@ -6,7 +6,7 @@ port = 59980
 s.bind((host, port))
 s.listen(1)
 cs = []
-for i in range(1):О
+for i in range(1):
     clnt, addr = s.accept()
     clnt.setblocking(0)
     cs.append(clnt)
